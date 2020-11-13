@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { LightboxModule } from 'ngx-lightbox';
+
 import {
   AccordionModule,
   AlertModule,        // Foundation Callouts
@@ -41,6 +43,7 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    LightboxModule,
     HttpClientModule,
     AlertModule.forRoot(),
     AccordionModule.forRoot(),
