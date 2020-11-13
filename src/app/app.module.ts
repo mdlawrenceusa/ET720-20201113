@@ -35,6 +35,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { FngAccordionComponent } from './fng-accordion/fng-accordion.component';
+import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
 
 @NgModule({
   imports: [
@@ -50,6 +51,7 @@ import { FngAccordionComponent } from './fng-accordion/fng-accordion.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'graphic', component: GraphicDesignComponent },
     ])
   ],
   declarations: [
@@ -60,7 +62,8 @@ import { FngAccordionComponent } from './fng-accordion/fng-accordion.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    FngAccordionComponent
+    FngAccordionComponent,
+    GraphicDesignComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
