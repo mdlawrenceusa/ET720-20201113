@@ -1,14 +1,12 @@
 <h3>Graphic Design Portfolio</h3>
-<div class="w3-container">
-
-    <div *ngFor="let image of _albums; index">
-
-        <div class="w3-card">
-          <img [src]="image.src"  width="275"  (click)="open(i)" />
-          <div class="w3-container">
-            <h5>{{ image.caption }}</h5>
-          </div>
-
+  <div class="grid-x grid-margin-x">
+    <div *ngFor="let image of _albums; index as i">
+      <div class="cell small-4">
+        <img class="thumbnail"  [src]="image.src"  width="100"  (click)="open(i)" />
+        <!--<h5>{{ image.caption }}</h5> -->
       </div>
     </div>
   </div>
+
+
+
